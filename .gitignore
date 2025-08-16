@@ -1,0 +1,44 @@
+# Build / auxiliary files from LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.gz
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.synctex
+*.bcf
+*.pdf
+*.xml
+*.xdv
+# Additional secondary files
+*.bbl
+*.blg
+*.ilg
+*.ind
+*.idx
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.acn
+*.acr
+*.alg
+*.glx
+*.glg
+*.cb
+*.cb2
+*.lb
+*.loa
+*.bbl
+
+# Temporary folders (if used)
+**/auto/**
+
+# VS Code specific settings (optional)
+.vscode/

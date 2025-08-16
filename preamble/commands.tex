@@ -1,0 +1,31 @@
+  \settextfont[BoldFont={IRNazanin Bold},Scale=1.0]{IRNazanin}
+\setlatintextfont{Times New Roman}
+  \linespread{1.4}
+  \newunicodechar{ }{~}
+  \addbibresource{./refs.bib}
+  \setlength{\cftsecindent}{0pt}
+  \setlength{\cftsubsecindent}{1.5em}
+  \setlength{\cftsubsubsecindent}{3em}
+  \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+  \renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+  \renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+  \renewcommand{\contentsname}{فهرست مطالب}
+
+  \makeatletter
+  \renewcommand\normalsize{%
+    \@setfontsize\normalsize{13pt}{15pt}%
+    \abovedisplayskip 12pt plus 3pt minus 9pt%
+    \abovedisplayshortskip \z@ plus 3pt%
+    \belowdisplayshortskip 6.5pt plus 3.5pt minus 3pt%
+    \belowdisplayskip \abovedisplayskip
+  }
+  \makeatother
+  \normalsize
+
+  \titlespacing*{\section}{0pt}{1\baselineskip}{0.5\baselineskip}
+  \titlespacing*{\subsection}{0pt}{1\baselineskip}{0.5\baselineskip}
+  \titlespacing*{\subsubsection}{0pt}{1\baselineskip}{0.5\baselineskip}
+
+\newcommand{\tick}{\ensuremath{\checkmark}}
+\newcommand{\cross}{\ensuremath{\times}}
+\newcommand{\warn}{\ensuremath{\triangle}}

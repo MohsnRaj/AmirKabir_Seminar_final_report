@@ -1,0 +1,56 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+% Load modular preamble files 
+\input{preamble/packages}
+\input{preamble/settings}
+\input{preamble/commands}
+  
+% Bibliography
+\addbibresource{refs.bib}  
+
+\begin{document}
+
+% Roman numbered frontmatter
+\pagenumbering{Roman}
+\subfile{frontmatter/titlepage}
+\clearpage
+\subfile{frontmatter/abstract}
+\tableofcontents
+\clearpage
+\renewcommand{\listfigurename}{فهرست شکل‌ها}
+ \listoffigures
+
+\renewcommand{\listtablename}{فهرست جداول}
+\phantomsection
+\addcontentsline{toc}{section}{فهرست جداول}
+\listoftables
+\clearpage
+% Arabic numbered chapters
+\clearpage
+\pagenumbering{arabic}
+\clearpage
+\subfile{chapters/intro}
+\clearpage 
+\subfile{chapters/background}
+\clearpage
+\subfile{chapters/related/related}
+\clearpage 
+\subfile{chapters/discussion}
+\clearpage 
+\subfile{chapters/conclusion}
+
+% References 
+\clearpage
+\phantomsection 
+
+\section*{\RL{مراجع}} % stays right-aligned
+\addcontentsline{toc}{section}{مراجع}
+% \vspace{5cm}
+\indent
+\nocite{*}
+\begin{LTR}
+\printbibliography[heading=none]
+\end{LTR}
+
+
+\end{document}

@@ -1,0 +1,50 @@
+% !TeX root = ../main.tex
+% !TeX program = xelatex
+
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{نتیجه‌گیری و پیشنهادات}
+\label{sec:conclusion}
+
+
+
+\begin{table}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l*{10}{>{\centering\arraybackslash}m{2.5cm}}}
+  \toprule
+  \makecell[r]{\textbf{ویژگی}} &
+  \makecell{\citeauthor{Dongre2024ICC}\\\cite{Dongre2024ICC}} &
+  \makecell{\citeauthor{pastukh2023feasibility}\\\cite{pastukh2023feasibility}} &
+  \makecell{\citeauthor{peng2022fairness}\\\cite{peng2022fairness}} &
+  \makecell{\citeauthor{naik2021coexistence}\\\cite{naik2021coexistence}} &
+  \makecell{\citeauthor{keshtiarast2025coexistence}\\\cite{keshtiarast2025coexistence}} &
+  \makecell{\citeauthor{Frangulea2024WNS3}\\\cite{Frangulea2024WNS3}} &
+  \makecell{\citeauthor{loginov2021enhanced}\\\cite{loginov2021enhanced}} &
+  \makecell{\citeauthor{kosek-szott2021downlink}\\\cite{kosek-szott2021downlink}} &
+  \makecell{\citeauthor{Szott2022SelfDeferral}\\\cite{Szott2022SelfDeferral}} \\
+  \midrule
+  عدالت دسترسی (\lr{Fairness})                 & $\tick$ & $\cross$ & $\tick$ & $\cross$ & $\warn$ & $\warn$ & $\tick$ & $\warn$ & $\tick$ \\
+  تأخیر (\lr{Latency})                          & $\tick$ & $\cross$ & $\cross$ & $\tick$ & $\warn$ & $\warn$ & $\warn$ & $\tick$ & $\warn$ \\
+  گذر‌دهی (\lr{Throughput})                     & $\tick$ & $\tick$ & $\tick$ & $\tick$ & $\tick$ & $\warn$ & $\tick$ & $\tick$ & $\tick$ \\
+  پایداری/امنیت (\lr{Robustness/Security})      & $\tick$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ \\
+  انطباق‌پذیری/تنظیم‌پذیری (\lr{Adaptivity})    & $\warn$ & $\cross$ & محدود & $\tick$ & $\tick$ & $\tick$ & $\tick$ & $\tick$ & $\tick$ \\
+  مقیاس‌پذیری (\lr{Scalability})                 & $\tick$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ \\
+  استفاده از \lr{Mini-slots}/\lr{Numerology}     & $\tick$ & $\cross$ & $\cross$ & $\cross$ & $\warn$ & $\tick$ & $\tick$ & $\tick$ & $\cross$ \\
+  تنظیم \lr{Backoff}/\lr{CW}                     & $\cross$ & $\cross$ & $\tick$ & $\cross$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ & $\tick$ \\
+  پرهیز از سیگنال رزرو (\lr{RS-free})            & $\tick$ & $\cross$ & $\warn$ & $\tick$ & $\warn$ & $\warn$ & $\warn$ & $\tick$ & $\tick$ \\
+  بهینه‌سازی زمان اشغال کانال (\lr{MCOT})        & $\warn$ & $\cross$ & $\tick$ & $\warn$ & $\tick$ & $\warn$ & $\warn$ & $\warn$ & $\warn$ \\
+  زمان‌بندی منبع/\lr{RB}                         & $\cross$ & $\cross$ & $\cross$ & $\tick$ & $\warn$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ \\
+  هم‌سیگنال‌دهی بین‌فناوری (\lr{Cross-tech})     & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ & $\cross$ \\
+  \bottomrule
+\end{tabular}%
+}
+\vspace{4pt}
+{\footnotesize
+راهنما: $\tick$ = دارد/به‌طور قوی پشتیبانی می‌کند، $\cross$ = ندارد/بررسی نشده، $\warn$ = وابسته به سناریو یا به‌صورت محدود/غیرمستقیم.}
+\caption{مقایسهٔ ویژگی‌های مقالات منتخب در هم‌زیستی \lr{Wi-Fi}/\lr{NR-U}}
+\end{table}
+
+
+\end{document}
